@@ -21,5 +21,10 @@
         {
             return Tittle;
         }
+
+        public void DecreaseQuantity(decimal quantity)
+        {
+            QuantityOnHand -= quantity;
+        }
     }
 }

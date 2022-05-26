@@ -53,10 +53,7 @@ namespace Store.Domain.StoreContext.Entities
         public void Ship()
         {
             //A cada 5 produtos é uma entrega a mais
-            var deliveries = new List<Delivery>
-            {
-                new Delivery(DateTime.Now.AddDays(5))
-            };
+            var deliveries = new List<Delivery>();
             var count = 1;
 
             foreach (var item in _items)
