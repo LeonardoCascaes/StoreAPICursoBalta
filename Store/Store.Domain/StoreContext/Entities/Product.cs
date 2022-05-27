@@ -1,6 +1,8 @@
-﻿namespace Store.Domain.StoreContext.Entities
+﻿using Store.Shared.Entities;
+
+namespace Store.Domain.StoreContext.Entities
 {
-    public class Product
+    public class Product : Entity
     {
         public Product(string tittle, string description, string image, decimal price, decimal quantityOnHand)
         {

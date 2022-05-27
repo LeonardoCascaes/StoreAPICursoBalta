@@ -1,10 +1,11 @@
 ﻿using Store.Domain.StoreContext.ValueObjects;
+using Store.Shared.Entities;
 using System.Collections.Generic;
 using System.Linq;
 
 namespace Store.Domain.StoreContext.Entities
 {
-    public class Customer
+    public class Customer : Entity
     {
         private readonly IList<Address> _addresses;
 
